@@ -1,0 +1,29 @@
+# Third-party model data (slopalytics.com / Artificial Analysis) is never committed; only derived insights.
+data/
+
+# Internal notes (policy, profiles, external-data insights, the maintainer's README).
+internal/
+
+# Local models, server binaries, logs, run outputs, backups, staging copies.
+models/
+bin/
+logs/
+ollama/
+harness/results/
+harness-backup-*/
+tasks-R-v1-backup-*/
+staging-GR/
+__pycache__/
+*.pyc
+
+# The TESTS are never published, so no model can train on them and bias results.
+# The harness code, checkers and scorers may be published; anything that contains or reveals tests may not:
+# task prompts and hidden tests, generators, voice examples, the reports and briefs that describe them,
+# and the mock server and selftests that embed canned task answers. harness/USAGE.md is the public guide.
+harness/tasks/
+harness/README.md
+harness/GR_REPORT.md
+harness/CODEX_BRIEF.md
+harness/mock_server.py
+harness/selftest.py
+harness/selftest_e2e.py

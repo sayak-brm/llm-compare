@@ -1,0 +1,5 @@
+# One case-insensitive phrase per line; editable locally.
+delve
+leverage
+it is worth noting
+game changer
